@@ -189,14 +189,14 @@ for (let i = 0; i < allMusic.length; i++) {
 
   let liAudioDuartionTag = ulTag.querySelector(`#${allMusic[i].src}`);
   let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
-  liAudioTag.addEventListener("loadeddata", ()=>{
+  liAudioTag.addEventListener("loaddata", ()=>{
     let duration = liAudioTag.duration;
     let totalMin = Math.floor(duration / 60);
     let totalSec = Math.floor(duration % 60);
     if(totalSec < 10){ //if sec is less than 10 then add 0 before it
       totalSec = `0${totalSec}`;
     };
-    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`; //passing total duation of song
+    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`; //passing total duration of song
     liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`); //adding t-duration attribute with total duration value
   });
 }

@@ -6,6 +6,8 @@ const Discover = () => {
     const { data, isFetching, error } = useGetTopChartsQuery();
     const genreTitle = 'pop'
 
+    console.log(data);
+
     return (
 
         <div className="flex slex-col">

@@ -11,7 +11,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
             },
         }),
         endpoints: (builder) => ({ 
-            getTopCharts: builder.query({ query: '/charts/world' }),
+            getTopCharts: builder.query({ query: () => '/charts/world' }),
         })
     });
 

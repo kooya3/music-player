@@ -12,10 +12,12 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
         }),
         endpoints: (builder) => ({ 
             getTopCharts: builder.query({ query: () => '/charts/world' }),
+            getSongsByGenre: builder.query({ query: (genre) => `v1/charts/genre-world?genre_code=${genre}` }),
         })
     });
 
     export const {
         useGetTopChartsQuery,
         useGetTopCharts,
+        useGetSongsByGenreQuery,
     } = shazamCoreApi;

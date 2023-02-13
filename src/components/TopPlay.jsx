@@ -20,7 +20,7 @@ const TopPlay = () => {
   const divRef = useRef(null);
 
   useEffect(() => {
-    divRef.current.scrollIntoView({ behaviour: 'smooth' }); /* dependency array removed to make sure page goes to top immediately on reload */ });
+    divRef.current.scrollIntoView({ behaviour: 'smooth' }); }); /* dependency array removed to make sure page goes to top immediately on reload */
 
   const topPlays = data?.slice(0, 7);
 
@@ -34,7 +34,14 @@ const TopPlay = () => {
   };
 
   return (
-    <div ref={divRef}>
+    <div ref={divRef} className="xl:ml-6 ml-0 xl:mb-0 mb-6 flex-1 xl:max-w-[500px] max-w-full flex flex-col">
+      <div className="w-full flex flex-col">
+      <div className="flex flex-row justify-between items-center">
+      <h2 className="text-white font-bold text-2xl">Top Charts</h2>
+      <Link to="/top-charts">
+      <p className="text-gray-300 text-base cursor-pointer">See more</p>
+      </Link>
+      </div>
 
     </div>
   )

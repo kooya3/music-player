@@ -66,6 +66,24 @@ const TopPlay = () => {
           </Link>
         </div>
 
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={15}
+          freeMode
+          centeredSlides
+          centeredSlidesBounds
+          modules={[FreeMode]}
+          className="mt-4"
+        >
+          {topPlays?.slice(0, 5).map((artist) => (
+            <SwiperSlide
+              key={artist?.key}
+              style={{ width: '25%', height: 'auto' }}
+              className="shadow-lg rounded-full animate-slideright"
+            >
+              
+            </SwiperSlide>
+
     </div>
   )
 } 

@@ -6,11 +6,15 @@ import { RiCloseLine } from 'react-icons/ri';
 import { logo } from '../assets';
 import { links } from '../assets/constants';
 
-const NavLinks = () => (
+const NavLinks = ({ handleClick }) => (
   <div className="mt-10">
     {links.map((item) => (
-      <NavLink className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-cyan-400">
-        {item.name}
+      <NavLink
+        key={item.name}
+        to={item.to}
+        className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-cyan-400"
+        onClick={() => handleClick && handleClick()}
+      >       {item.name}
       </NavLink>
     ))}
   </div>

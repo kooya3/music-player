@@ -19,6 +19,9 @@ const TopPlay = () => {
   const { data } = useGetTopChartsQuery();
   const divRef = useRef(null);
 
+  useEffect(() => {
+    divRef.current.scrollIntoView({ behaviour: 'smooth' }); /* dependency array removed to make sure page goes to top immediately on reload */ });
+
   const topPlays = data?.slice(0, 7);
 
   const handlePauseClick = () => {
@@ -29,6 +32,12 @@ const TopPlay = () => {
     dispatch(setActiveSong({ song, data, i }));
     dispatch(playPause(true));
   };
+
+  return (
+    <div ref={divRef}>
+
+    </div>
+  )
 } 
 
 export default TopPlay;

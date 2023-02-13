@@ -43,6 +43,21 @@ const TopPlay = () => {
       </Link>
       </div>
 
+      <div className="mt-4 flex flex-col gap-1">
+          {topPlays?.map((song, i) => (
+            <TopChartCard
+              key={song.key}
+              song={song}
+              i={i}
+              isPlaying={isPlaying}
+              activeSong={activeSong}
+              handlePauseClick={handlePauseClick}
+              handlePlayClick={() => handlePlayClick(song, i)}
+            />
+          ))}
+        </div>
+      </div>
+
     </div>
   )
 } 

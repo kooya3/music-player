@@ -37,7 +37,6 @@ const SongDetails = () => {
 
 
           </div>
-        </div>
     );
 };
 

@@ -18,7 +18,7 @@ const ArtistDetails = () => {
     <div className="flex flex-col">
       <DetailsHeader
         artistId={artistId}
-        artistData={artistData?.data[0]}
+        artistData={artistData?.data}
       />
 
       <RelatedSongs
@@ -26,6 +26,7 @@ const ArtistDetails = () => {
         artistId={artistId}
         isPlaying={isPlaying}
         activeSong={activeSong}
+
       />
     </div>
   );

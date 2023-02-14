@@ -18,7 +18,7 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
             .replace('{h}', '560')
             : songData?.images?.coverart
           }
-    className="sm:w-48 w-28 sm:h-48 h-28 rounded-full object-cover border-2 shadow-xl shadow-black"
+    className="sm:w-48 w-28 sm:h-48 h-28 rounded-full object-cover border-2 shadow-xl shadow-purple-400"
 />
 
       <div className="ml-5">

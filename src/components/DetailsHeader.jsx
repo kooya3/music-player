@@ -27,7 +27,7 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
       </p>
       {!artistId && (
           <Link to={`/artists/${songData?.artists[0]?.adamid}`}>
-            <p className="text-base text-gray-400 mt-2">{songData?.subtitle}</p>
+            <p className="text-base text-yellow-400 mt-2">{songData?.subtitle}</p>
             </Link>
         )}
 
@@ -40,7 +40,7 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
       </div>
     </div>
 
-    <div className="w-full sm:h-44 h-24" />
+    <div className="w-full sm:h-44 h-24 justify-center" />
   </div>
       );
       };

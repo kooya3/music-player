@@ -14,20 +14,28 @@ const ArtistDetails = () => {
 
   if (error) return <Error />;
 
+  console.log("artistData:", artistData);
+  console.log("songs:", artistData?.songs);
+
+  const songs = artistData?.songs;
+
   return (
     <div className="flex flex-col">
       <DetailsHeader
         artistId={artistId}
-        artistData={artistData?.data}
+        artistData={artistData}
       />
-
-      <RelatedSongs
-        data={artistData?.data[0].views['top-songs']?.data}
-        artistId={artistId}
-        isPlaying={isPlaying}
-        activeSong={activeSong}
-
-      />
+  
+      {songs ? (
+        <RelatedSongs
+          data={Object.values(songs)}
+          artistId={artistId}
+          isPlaying={isPlaying}
+          activeSong={activeSong}
+        />
+      ) : (
+        <p>No songs found for this artist.</p>
+      )}
     </div>
   );
 };

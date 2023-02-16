@@ -10,7 +10,7 @@ const PlayPause = ({ isPlaying, activeSong, song, handlePause, handlePlay }) => 
 ) : (
   <FaPlayCircle
     size={35}
-    className="text-pink-400"
+    className="text-gray-400"
     onClick={handlePlay}
   />
 ));

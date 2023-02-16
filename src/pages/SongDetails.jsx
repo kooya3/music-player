@@ -50,6 +50,8 @@ const SongDetails = () => {
   </div>
 </div>
 
+{data && data.songs && console.log(data.songs)}
+
       <RelatedSongs
         data={data}
         artistId={artistId}

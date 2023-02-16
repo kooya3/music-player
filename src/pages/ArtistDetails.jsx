@@ -34,7 +34,7 @@ const ArtistDetails = () => {
           activeSong={activeSong}
         />
       ) : (
-        <p>No songs found for this artist.</p>
+        <p className="md:flex hidden flex-col w-[340px] py-10 px-4 bg-[#281764] text-red-600 ble text-lg">No songs found for this artist.</p>
       )}
     </div>
   );

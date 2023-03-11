@@ -49,7 +49,7 @@ const TopPlay = () => {
     divRef.current.scrollIntoView({ behavior: 'smooth' });
   });
 
-  const topPlays = data?.slice(0, 5);
+  const topPlays = data?.slice(0, 6); /* This is the topplays tab that will hold the top songs but it doesnt have a scrollable bar */
 
   const handlePauseClick = () => {
     dispatch(playPause(false));
@@ -102,7 +102,7 @@ const TopPlay = () => {
           modules={[FreeMode]}
           className="mt-4"
         >
-          {topPlays?.slice(0, 5).map((artist) => (
+          {topPlays?.slice(0, 6).map((artist) => (  /* This is the slice of the topartists swiper but it's only limited to 6 artists */
             <SwiperSlide
               key={artist?.key}
               style={{ width: '25%', height: 'auto' }}

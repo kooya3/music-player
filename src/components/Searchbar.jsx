@@ -14,7 +14,7 @@ const Searchbar = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="on" className="p-2 text-green-400 focus-within:text-red-600">
+    <form onSubmit={handleSubmit} autoComplete="off" className="p-2 text-green-400 focus-within:text-red-500">
       <label htmlFor="search-field" className="sr-only">
         Search all files
       </label>

@@ -133,4 +133,4 @@ Here we are going to focus on 2. Creating a Topical Branch:
 
 8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
 
-#
+# [![Netlify Status](https://api.netlify.com/api/v1/badges/9e499308-013c-4d0a-92c6-72175cc62183/deploy-status)](https://app.netlify.com/sites/elmusiq/deploys)

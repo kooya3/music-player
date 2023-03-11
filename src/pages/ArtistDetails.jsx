@@ -26,7 +26,7 @@ const ArtistDetails = () => {
         artistId={artistId}
         isPlaying={isPlaying}
         activeSong={activeSong}
-        
+                
       />
       
     </div>

@@ -1,8 +1,21 @@
-# Project Lyrics
+# Project Musiq
 
-Develop an elegant React.js Music Application. 
+Develop an elegant React.js Music Application. By using RapidAPI Shazam API, REDUX, Sweet Coding skills and tons of research.
 
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
+
+## Screenshots
+This is a preview of the website make sure to give it a star (1):
+![Screen Shot 2023-03-12 at 02 28 39](https://user-images.githubusercontent.com/84116117/224516947-56fbc434-567e-46aa-87a8-4de51e3fb7c0.png)
+
+Clone the project
+```bash
+  git clone https://github.com/kooya3/music-player.git
+```
+This is a preview of the website make sure to give it a star (1):
+
+
+
+Check out the complete project [here](https://elmusiq.netlify.app/)
 
 # Contributing
 

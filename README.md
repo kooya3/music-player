@@ -1,18 +1,26 @@
-# Project Musiq
+# ✨Project Musiq✨🚀
 
-Develop an elegant React.js Music Application. By using RapidAPI Shazam API, REDUX, Sweet Coding skills and tons of research.
+Introducing my new web app that will revolutionize the way you listen to music. I built this app using the latest technologies including ReactJS, Redux, and Tailwind, to create a sleek and user-friendly interface that is easy to navigate.
 
+My app not only provides a search functionality to find your favorite songs, but it also utilizes the Shazam API to offer an extensive list of related songs by your favorite artists. You can easily access top charts from around the world and discover new music from different regions.
+
+In addition, I've added a unique feature that utilizes geolocation API to identify the music popular in your location. With this feature, you can easily discover new music from your local region and stay up-to-date with the latest trends.
+
+I understand that building such a sophisticated app was no easy feat, but I worked tirelessly to minimize errors and bugs, ensuring that my app runs smoothly and efficiently. With your support, I hope to continue improving and expanding my app to provide the best music listening experience possible.
+
+I welcome contributions and sponsorships from anyone who shares my passion for music and technology. So, come join me and experience the coolest music app ever created!🔥
 
 ## Screenshots
-This is a preview of the website make sure to give it a star (1):
+This is a preview of the website make sure to give it a ![star (1)](https://user-images.githubusercontent.com/84116117/222882252-e492996e-244f-4b98-b001-77581ebd8f8a.png):
 ![Screen Shot 2023-03-12 at 02 28 39](https://user-images.githubusercontent.com/84116117/224516947-56fbc434-567e-46aa-87a8-4de51e3fb7c0.png)
 
 Clone the project
 ```bash
   git clone https://github.com/kooya3/music-player.git
 ```
-This is a preview of the website make sure to give it a star (1):
+This is a preview of the website make sure to give it a ![star (1)](https://user-images.githubusercontent.com/84116117/222882252-e492996e-244f-4b98-b001-77581ebd8f8a.png):
 
+![Screen Shot 2023-03-12 at 02 27 52](https://user-images.githubusercontent.com/84116117/224517083-e6d03034-44ea-4bef-89ec-1043c78a2260.png)
 
 
 Check out the complete project [here](https://elmusiq.netlify.app/)
